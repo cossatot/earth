@@ -2,15 +2,15 @@
 <html itemscope itemtype="http://schema.org/Map" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <head>
     <meta charset="utf-8"/>
-    <title>earth :: an animated map of global wind and weather</title>
+    <title>earthvelocity :: global tectonics</title>
     <meta itemprop="name"                                      content="earth"/>
     <meta itemprop="description"     name="description"        content="an animated map of global wind and weather"/>
-    <meta itemprop="author"          name="author"             content="Cameron Beccario"/>
+    <meta itemprop="author"          name="author"             content="Richard Styron and Cameron Beccario"/>
 
     <meta property="og:type"        content="website"/>
     <meta property="og:title"       content="earth"/>
-    <meta property="og:description" content="An animated map of global wind and weather. Visit the community at https://www.facebook.com/EarthWindMap"/>
-    <meta property="og:url"         content="http://earth.nullschool.net"/>
+    <meta property="og:description" content="Animations of current tectonic velocities"/>
+    <meta property="og:url"         content="http://earth-analysis.com/vels/public/"/>
     <meta property="og:image"       content="http://earth.nullschool.net/preview.jpg"/>
 
     <link rel="shortcut icon" href="/favicon.ico"/>
@@ -32,11 +32,6 @@
         <svg id="foreground" class="fill-screen" xmlns="http://www.w3.org/2000/svg" version="1.1"></svg>
     </div>
 
-    <div id="sponsor" class="invisible">
-        <p><span id="sponsor-hide" class="text-button invisible"> ✕ </span>community</p>
-        <a id="sponsor-link" href="https://www.facebook.com/EarthWindMap">EarthWindMap</a>
-    </div>
-
     <div id="details">
         <p id="status"></p>
         <div id="location">
@@ -55,15 +50,17 @@
         </div>
 
         <p id="earth">
-            <span id="show-menu" class="text-button" title="menu">earth</span>
+            <span id="show-menu" class="text-button" title="menu">earthvelocity</span>
             <span id="progress" class="invisible"></span>
         </p>
 
         <div id="menu" class="invisible">
+          <!--
             <p>Date | <span
                 id="data-date" class="local"></span> <span
                 id="toggle-zone" class="text-button"></span>
             </p>
+          -->
             <p>Data | <span id="data-layer"></span></p>
             <p><span id="scale-label">Scale | </span><canvas id="scale"></canvas></p>
             <p>Source | <span id="data-center"></span></p>
